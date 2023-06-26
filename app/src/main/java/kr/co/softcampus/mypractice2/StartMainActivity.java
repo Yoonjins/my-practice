@@ -8,21 +8,21 @@ import android.widget.Button;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class SubActivity extends AppCompatActivity {
+public class StartMainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_start);
 
         Button startButton = findViewById(R.id.selectButton);
-        SubActivity.BtnListener listener2 = new SubActivity.BtnListener();
+        StartMainActivity.BtnListener listener2 = new StartMainActivity.BtnListener();
         startButton.setOnClickListener(listener2);
     }
 
     class BtnListener implements View.OnClickListener {
         @Override
         public void onClick(View view) {
-            Intent intent2 = new Intent(SubActivity.this, StartActivity.class);
+            Intent intent2 = new Intent(StartMainActivity.this, StartActivity.class);
             startActivity(intent2);
         }
     }

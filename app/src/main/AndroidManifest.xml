@@ -29,11 +29,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".SubActivity" />
+        <activity android:name=".StartMainActivity" />
         <activity android:name=".StartActivity" />
-        <activity android:name=".SelectActivity" />
         <activity android:name=".ScanStartActivity" />
         <activity android:name=".GuideActivity2" />
+        <activity android:name=".DocActivity" />
     </application>
 
 </manifest>

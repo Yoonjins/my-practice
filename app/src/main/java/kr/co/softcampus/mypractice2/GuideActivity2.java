@@ -50,7 +50,7 @@ public class GuideActivity2 extends AppCompatActivity {
          * 좌 우로 슬라이딩 할 수 있게 함. 거의 무한대로
          */
 
-        mPager.setCurrentItem(1002); //시작 지점
+        mPager.setCurrentItem(1); //시작 지점
         mPager.setOffscreenPageLimit(3); //최대 이미지 수
 
         mPager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
@@ -76,7 +76,7 @@ public class GuideActivity2 extends AppCompatActivity {
     class BtnListener implements View.OnClickListener {
         @Override
         public void onClick(View view) {
-            Intent intent = new Intent(GuideActivity2.this, ScanStartActivity.class);
+            Intent intent = new Intent(GuideActivity2.this, DocActivity.class);
             startActivity(intent);
         }
     }
